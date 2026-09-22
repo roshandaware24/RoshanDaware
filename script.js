@@ -50,3 +50,35 @@ function toggleMenu() {
     const menu = document.querySelector(".nav-links");
     menu.classList.toggle("show");
 }
+
+// ================= FAQ ACCORDION =================
+
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question => {
+
+    question.addEventListener("click", () => {
+
+        const currentItem = question.parentElement;
+        const currentAnswer = currentItem.querySelector(".faq-answer");
+
+        document.querySelectorAll(".faq-item").forEach(item => {
+
+            if (item !== currentItem) {
+                item.classList.remove("active");
+                item.querySelector(".faq-answer").style.maxHeight = null;
+            }
+
+        });
+
+        currentItem.classList.toggle("active");
+
+        if (currentItem.classList.contains("active")) {
+            currentAnswer.style.maxHeight = currentAnswer.scrollHeight + "px";
+        } else {
+            currentAnswer.style.maxHeight = null;
+        }
+
+    });
+
+});

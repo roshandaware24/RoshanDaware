@@ -401,6 +401,56 @@ font-weight: bold;
 text-decoration: underline;
 }
 
+
+/* ================= FAQ ================= */
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq-icon {
+    font-size: 24px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding: 0 5px 20px;
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
 /* ========================= CONTACT ========================= */
 
 .contact-form {
