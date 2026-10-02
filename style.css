@@ -227,7 +227,7 @@ margin-top: 20px;
 }
 
 .social-btn:hover {
-    background-color: #46a077;
+    background-color: #df9143;
     transform: translateY(-5px);
 }
 
@@ -270,6 +270,87 @@ height: 5px;
 background-color: #9df5db;
 
 
+}
+
+.about-more {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.6s ease,
+                opacity 0.4s ease;
+}
+
+.about-more.active {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
+.about-more-inner {
+    overflow: hidden;
+    min-height: 0;
+}
+
+.about-more h3 {
+    margin-top: 25px;
+    color: #ffffff;
+}
+
+.about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.about-skills span {
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(78, 218, 195, 0.3);
+    color: #f9f9f9;
+    padding: 9px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.about-skills span:hover {
+    background: #cc8006;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.about-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: transparent;
+    color:  #8580ef;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 12px 0;
+    transition: color 0.3s ease;
+}
+
+.about-toggle:hover {
+    color: #63f1ea;
+}
+
+.about-toggle i {
+    transition: transform 0.4s ease;
+}
+
+.about-toggle.active i {
+    transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-more,
+    .about-toggle,
+    .about-toggle i,
+    .about-skills span {
+        transition: none;
+    }
 }
 
 /* ========================= CARDS ========================= */
@@ -402,54 +483,6 @@ text-decoration: underline;
 }
 
 
-/* ================= FAQ ================= */
-
-.faq-container {
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.faq-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.faq-question {
-    width: 100%;
-    background: none;
-    border: none;
-    color: inherit;
-    padding: 20px 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.faq-icon {
-    font-size: 24px;
-    font-weight: 400;
-    transition: transform 0.3s ease;
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease;
-}
-
-.faq-answer p {
-    margin: 0;
-    padding: 0 5px 20px;
-    line-height: 1.7;
-    opacity: 0.8;
-}
-
-.faq-item.active .faq-icon {
-    transform: rotate(45deg);
-}
 
 /* ========================= CONTACT ========================= */
 

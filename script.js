@@ -51,34 +51,22 @@ function toggleMenu() {
     menu.classList.toggle("show");
 }
 
-// ================= FAQ ACCORDION =================
 
-const faqQuestions = document.querySelectorAll(".faq-question");
+const aboutToggle = document.getElementById("aboutToggle");
+const aboutMore = document.getElementById("aboutMore");
 
-faqQuestions.forEach(question => {
+aboutToggle.addEventListener("click", function () {
 
-    question.addEventListener("click", () => {
+    const isExpanded = aboutMore.classList.toggle("active");
 
-        const currentItem = question.parentElement;
-        const currentAnswer = currentItem.querySelector(".faq-answer");
+    aboutToggle.classList.toggle("active", isExpanded);
 
-        document.querySelectorAll(".faq-item").forEach(item => {
+    aboutToggle.setAttribute("aria-expanded", isExpanded);
 
-            if (item !== currentItem) {
-                item.classList.remove("active");
-                item.querySelector(".faq-answer").style.maxHeight = null;
-            }
+    aboutToggle.querySelector("span").textContent =
+        isExpanded ? "Read Less" : "Read More";
 
-        });
-
-        currentItem.classList.toggle("active");
-
-        if (currentItem.classList.contains("active")) {
-            currentAnswer.style.maxHeight = currentAnswer.scrollHeight + "px";
-        } else {
-            currentAnswer.style.maxHeight = null;
-        }
-
-    });
+    aboutToggle.querySelector("i").className =
+        isExpanded ? "fas fa-arrow-up" : "fas fa-arrow-right";
 
 });
