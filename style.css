@@ -804,3 +804,17 @@ MOBILE MENU
     }
 
 }
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #ffffff;
+    color: #000000;
+    padding: 8px 12px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+}

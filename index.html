@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +13,11 @@
     <title>Roshan Daware | Digital Marketing & Web Development</title>
 
     <meta name="description"
-        content="Official portfolio of Roshan Daware, a digital marketing enthusiast and web developer from Maharashtra, India. Explore his SEO, social media marketing, Google Ads and web development projects.">
+        content="Roshan Daware, a digital marketing enthusiast and web developer from Maharashtra, India, shares his SEO, social media, Google Ads and web development projects.">
 
     <meta name="author" content="Roshan Daware">
 
     <meta name="robots" content="index, follow">
-
-    <meta name="language" content="English">
 
     <link rel="canonical"
         href="https://roshandaware24.github.io/RoshanDaware/">
@@ -30,6 +30,12 @@
 
     <link rel="apple-touch-icon"
         href="images/apple-touch-icon.png">
+
+    <!-- ================= PERFORMANCE ================= -->
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <link rel="preload" as="image" href="images/profile.jpg" fetchpriority="high">
 
     <!-- ================= THEME ================= -->
 
@@ -53,7 +59,7 @@
         content="Roshan Daware">
 
     <meta property="og:image"
-        content="https://roshandaware24.github.io/RoshanDaware/images/logo.png">
+        content="https://roshandaware24.github.io/RoshanDaware/images/profile.jpg">
 
     <meta property="og:image:alt"
         content="Roshan Daware Portfolio">
@@ -70,7 +76,7 @@
         content="Explore Roshan Daware's portfolio featuring SEO, social media marketing, Google Ads and web development projects.">
 
     <meta name="twitter:image"
-        content="https://roshandaware24.github.io/RoshanDaware/images/logo.png">
+        content="https://roshandaware24.github.io/RoshanDaware/images/profile.jpg">
 
     <!-- ================= STRUCTURED DATA ================= -->
 
@@ -83,6 +89,7 @@
       "image": "https://roshandaware24.github.io/RoshanDaware/images/profile.jpg",
       "jobTitle": "Digital Marketing Enthusiast",
       "description": "Roshan Daware is a BCA graduate and digital marketing enthusiast from Maharashtra, India, interested in SEO, social media marketing, Google Ads, web development and e-commerce.",
+      "alumniOf": "Sahyadri College, Sangamner",
       "sameAs": [
         "https://github.com/roshandaware24",
         "https://www.linkedin.com/in/roshan-daware-102926284/",
@@ -105,7 +112,6 @@
     }
     </script>
 
-
     <!-- Font Awesome -->
     <link
         rel="stylesheet"
@@ -118,16 +124,23 @@
 
 <body>
 
+<!-- ================= SKIP LINK ================= -->
+
+<a href="#home" class="skip-link">Skip to main content</a>
+
 <!-- ================= NAVIGATION ================= -->
+
 <nav class="navbar">
 
     <div class="logo">
         Roshan Daware
     </div>
 
-    <button class="menu-button" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-</button>
+    <button class="menu-button"
+            onclick="toggleMenu()"
+            aria-label="Open navigation menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
 
     <ul class="nav-links">
 
@@ -154,13 +167,14 @@
         </h1>
 
         <h2>
-            Digital Marketing Enthusiast & Web Developer in Maharastra
+            Digital Marketing Enthusiast & Web Developer in Maharashtra
         </h2>
 
         <p class="hero-description">
-            I'm Roshan Daware, a passionate digital marketing enthusiast
-            with an interest in social media marketing, web development,
-            and building modern, responsive and user-friendly digital experiences.
+            I'm Roshan Daware, a digital marketing enthusiast.
+            I enjoy social media marketing and web development,
+            and I like building websites that are modern,
+            responsive and easy to use.
         </p>
 
         <!-- Social Links -->
@@ -168,28 +182,31 @@
 
             <a href="https://www.linkedin.com/in/roshan-daware-102926284"
                target="_blank"
+               rel="noopener noreferrer"
                class="social-btn"
                aria-label="Roshan Daware on LinkedIn">
 
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
 
             </a>
 
             <a href="https://www.instagram.com/daware_roshan07"
                target="_blank"
+               rel="noopener noreferrer"
                class="social-btn"
                aria-label="Roshan Daware on Instagram">
 
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
 
             </a>
 
             <a href="https://github.com/roshandaware24"
                target="_blank"
+               rel="noopener noreferrer"
                class="social-btn"
                aria-label="Roshan Daware on GitHub">
 
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
 
             </a>
 
@@ -201,7 +218,8 @@
     <div class="hero-image">
 
         <img src="images/profile.jpg"
-             alt="Roshan Daware - Digital Marketing Enthusiast and Web Developer">
+             alt="Roshan Daware - Digital Marketing Enthusiast and Web Developer"
+             fetchpriority="high">
 
     </div>
 
@@ -223,16 +241,14 @@
 
         <p>
             I'm Roshan Daware, a BCA graduate and digital marketer
-            from Maharashtra specializing in digital growth — from
-            SEO and content strategy to paid advertising and
-            e-commerce optimization.
+            from Maharashtra. I work on growth in areas like SEO,
+            content, paid ads and e-commerce.
         </p>
 
         <p>
-            I combine digital marketing knowledge with a technical
-            foundation in HTML, CSS, JavaScript, PHP, and MySQL.
-            This helps me understand both marketing strategy and
-            the technical implementation behind modern websites.
+            I know HTML, CSS, JavaScript, PHP and MySQL. This helps
+            me understand both the marketing strategy and how
+            modern websites are built.
         </p>
 
         <div class="about-more" id="aboutMore">
@@ -297,7 +313,7 @@
                 aria-controls="aboutMore">
 
             <span>Read More</span>
-            <i class="fas fa-arrow-right"></i>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
 
         </button>
 
@@ -317,19 +333,20 @@
 
         <div class="card">
 
-    <h3>
-        Master of Business Administration (MBA)
-    </h3>
+            <h3>
+                Master of Business Administration (MBA)
+            </h3>
 
-    <p class="muted-text">
-        Sahyadri Valley College, Rajuri-Pune | 2027    </p>
+            <p class="muted-text">
+                Sahyadri Valley College, Rajuri-Pune | 2027
+            </p>
 
-    <p class="card-description">
-        Currently studying MBA with an interest in digital marketing,
-        business strategy, e-commerce and entrepreneurship.
-    </p>
+            <p class="card-description">
+                Currently studying MBA with an interest in digital marketing,
+                business strategy, e-commerce and entrepreneurship.
+            </p>
 
-</div>
+        </div>
 
         <div class="card">
 
@@ -352,15 +369,15 @@
         <div class="card">
 
             <h3>
-               Higher Secondary Education
+                Higher Secondary Education
             </h3>
 
             <p class="muted-text">
-               Agasti college, Akole |2023
+                Agasti College, Akole | 2023
             </p>
 
             <p class="card-description">
-                Completed higher  secondary education with
+                Completed higher secondary education with
                 written communication, research and design.
             </p>
 
@@ -369,15 +386,15 @@
         <div class="card">
 
             <h3>
-               Schooling
+                Schooling
             </h3>
 
             <p class="muted-text">
-                 New English School, Nimbral | 2020
+                New English School, Nimbral | 2020
             </p>
 
             <p class="card-description">
-                Completed my schooling in new english school, nimbral 
+                Completed my schooling at New English School, Nimbral.
             </p>
 
         </div>
@@ -415,9 +432,11 @@
             </p>
 
             <a href="images/certificate1.pdf"
-            target="_blank"
-             class="certificate-btn">
-                View Certificate <span>→</span>
+               target="_blank"
+               rel="noopener noreferrer"
+               class="certificate-btn"
+               aria-label="View Certificate: Digital Business Skills (opens in new tab)">
+                View Certificate <span aria-hidden="true">→</span>
             </a>
 
         </div>
@@ -440,8 +459,10 @@
                 and professional skills.
             </p>
 
-            <a href="images/certificate2.pdf" class="certificate-btn">
-                View Certificate <span>→</span>
+            <a href="images/certificate2.pdf"
+               class="certificate-btn"
+               aria-label="View Certificate: Digital Marketing Strategy">
+                View Certificate <span aria-hidden="true">→</span>
             </a>
 
         </div>
@@ -464,15 +485,17 @@
                 creative and useful digital solutions.
             </p>
 
-            <a href="images/certificate3.pdf" class="certificate-btn">
-                View Certificate <span>→</span>
+            <a href="images/certificate3.pdf"
+               class="certificate-btn"
+               aria-label="View Certificate: Generative and Agentic AI">
+                View Certificate <span aria-hidden="true">→</span>
             </a>
 
         </div>
 
-        <!--------------certificate 4------------>
+        <!-- Certificate 4 -->
 
-         <div class="card">
+        <div class="card">
 
             <h3>
                 AI Foundation Course
@@ -483,19 +506,19 @@
             </p>
 
             <p class="card-description">
-                Certificate focused on continuing to upskill and build a career at 
-                the intersection of ai,digital marketing and business.
+                Certificate focused on continuing to upskill and build a career at
+                the intersection of AI, digital marketing and business.
             </p>
 
-            <a href="images/certificate4.pdf" class="certificate-btn">
-                View Certificate <span>→</span>
+            <a href="images/certificate4.pdf"
+               class="certificate-btn"
+               aria-label="View Certificate: AI Foundation Course">
+                View Certificate <span aria-hidden="true">→</span>
             </a>
 
         </div>
 
-        <!--------------certificate 5------------>
-
-
+        <!-- Certificate 5 -->
 
         <div class="card">
 
@@ -509,12 +532,14 @@
 
             <p class="card-description">
                 A valuable learning experience that helped me strengthen my
-                understanding of digital marketing and the evolving ai-driven digital
+                understanding of digital marketing and the evolving AI-driven digital
                 landscape.
             </p>
 
-            <a href="images/certificate5.pdf" class="certificate-btn">
-                View Certificate <span>→</span>
+            <a href="images/certificate5.pdf"
+               class="certificate-btn"
+               aria-label="View Certificate: Booming Digital Marketing">
+                View Certificate <span aria-hidden="true">→</span>
             </a>
 
         </div>
@@ -543,14 +568,14 @@
         <span class="skill-tag">GitHub</span>
         <span class="skill-tag">Digital Marketing</span>
         <span class="skill-tag">Social Media Marketing</span>
-        <span class="skill-tag"> Marketing Research</span>
-         <span class="skill-tag">AI Tools</span>
+        <span class="skill-tag">Marketing Research</span>
+        <span class="skill-tag">AI Tools</span>
         <span class="skill-tag">Adobe Express</span>
         <span class="skill-tag">Canva</span>
         <span class="skill-tag">Web Development</span>
         <span class="skill-tag">Google Analytics</span>
         <span class="skill-tag">Google Ads</span>
-       
+
     </div>
 
 </section>
@@ -568,59 +593,73 @@
 
         <div class="card project-card">
 
-    <h3>
-        Shree Ambika Jewellery Website
-    </h3>
+            <h3>
+                Shree Ambika Jewellery Website
+            </h3>
 
-    <p class="card-description">
-        A responsive jewellery website designed to showcase
-        jewellery collections, product categories, business
-        information and customer contact options.
-    </p>
+            <p class="card-description">
+                A responsive jewellery website designed to showcase
+                jewellery collections, product categories, business
+                information and customer contact options.
+            </p>
 
-    <a href="#" class="project-link">
-        View Project <span>→</span>
-    </a>
+            <a href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link"
+               aria-label="View Project: Shree Ambika Jewellery Website (opens in new tab)">
+                View Project <span aria-hidden="true">→</span>
+            </a>
 
-</div>
-
-
-<div class="card project-card">
-
-    <h3>
-        Shri Ambika Mata Temple Website
-    </h3>
-
-    <p class="card-description">
-        A responsive temple website presenting temple history,
-        religious traditions, festivals, gallery and important
-        information for devotees and visitors.
-    </p>
-
-    <a href="#" class="project-link">
-        View Project <span>→</span>
-    </a>
-
-</div>
+        </div>
 
 
-<div class="card project-card">
+        <div class="card project-card">
 
-    <h3>
-        Online Shop Order Management System
-    </h3>
+            <h3>
+                Shri Ambika Mata Temple Website
+            </h3>
 
-    <p class="card-description">
-        A PHP and MySQL-based web application developed for
-        managing products, customer orders and online shop
-        operations.
-    </p>
+            <p class="card-description">
+                A responsive temple website presenting temple history,
+                religious traditions, festivals, gallery and important
+                information for devotees and visitors.
+            </p>
 
-    <a href="#" class="project-link">
-        View Project <span>→</span>
-    </a>
+            <a href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link"
+               aria-label="View Project: Shri Ambika Mata Temple Website (opens in new tab)">
+                View Project <span aria-hidden="true">→</span>
+            </a>
 
-</div>
+        </div>
+
+
+        <div class="card project-card">
+
+            <h3>
+                Online Shop Order Management System
+            </h3>
+
+            <p class="card-description">
+                A PHP and MySQL-based web application developed for
+                managing products, customer orders and online shop
+                operations.
+            </p>
+
+            
+            <a href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link"
+               aria-label="View Project: Online Shop Order Management System (opens in new tab)">
+                View Project <span aria-hidden="true">→</span>
+            </a>
+
+        </div>
+
     </div>
 
 </section>
@@ -634,61 +673,71 @@
     </h2>
 
     <p class="contact-description">
-    Interested in digital marketing, SEO, website development,
-    social media marketing or e-commerce projects?
-    Feel free to get in touch with me.
+        Interested in digital marketing, SEO, website development,
+        social media marketing or e-commerce projects?
+        Feel free to get in touch with me.
     </p>
 
-       
+    <form id="contactForm" class="contact-form">
 
-  <form id="contactForm" class="contact-form">
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            aria-label="Your name"
+            autocomplete="name"
+            required
+        >
 
-    <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-    >
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            aria-label="Your email address"
+            autocomplete="email"
+            required
+        >
 
-    <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-    >
+        <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            aria-label="Your message"
+            required
+        ></textarea>
 
-    <textarea
-        name="message"
-        rows="5"
-        placeholder="Your Message"
-        required
-    ></textarea>
+        <input
+            type="hidden"
+            name="_subject"
+            value="New Message from Roshan Portfolio"
+        >
 
-    <input
-        type="hidden"
-        name="_subject"
-        value="New Message from Roshan Portfolio"
-    >
+        <input
+            type="hidden"
+            name="_template"
+            value="table"
+        >
 
-    <input
-        type="hidden"
-        name="_template"
-        value="table"
-    >
+        <button type="submit">
+            Send Message
+        </button>
 
-    <button type="submit">
-        Send Message
-    </button>
+    </form>
 
-</form>
+    <p id="formMessage" aria-live="polite"></p>
 
-<p id="formMessage"></p>
+</section>
+
 <!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <p><br>
+    <p>
         © 2026 Roshan Daware. All Rights Reserved.
+    </p>
+
+    <p>
+        Last updated: October 2026
     </p>
 
 </footer>

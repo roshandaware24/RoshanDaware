@@ -67,6 +67,6 @@ aboutToggle.addEventListener("click", function () {
         isExpanded ? "Read Less" : "Read More";
 
     aboutToggle.querySelector("i").className =
-        isExpanded ? "fas fa-arrow-up" : "fas fa-arrow-right";
+        isExpanded ? "fas fa-arrow-down" : "fas fa-arrow-right";
 
 });
