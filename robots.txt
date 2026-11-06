@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://roshandaware24.github.io/RoshanDaware/sitemap.xml
+Sitemap: https://roshandaware.netlify.app/sitemap.xml
