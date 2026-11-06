@@ -83,7 +83,7 @@ list-style: none;
 /* Mouse Hover */
 
 .nav-links a:hover {
-    color: #9df5db;
+    color: #ffffff;
 }
 
 .nav-links a:hover::after {
@@ -227,7 +227,7 @@ margin-top: 20px;
 }
 
 .social-btn:hover {
-    background-color: #df9143;
+    background-color: #dfb843;
     transform: translateY(-5px);
 }
 
@@ -418,6 +418,21 @@ text-decoration: underline;
 
 /* ========================= SKILLS ========================= */
 
+.skills-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.skills-group-title {
+    margin: 0 0 14px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ebdab2;
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -425,43 +440,65 @@ text-decoration: underline;
     width: 100%;
 }
 
-/* ===== SKILL TAGS ===== */
-
 .skill-tag {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
 
     width: 100%;
     min-height: 52px;
     padding: 12px 14px;
 
     background-color: #111827;
-
     border: 1px solid #17202b;
+    border-radius: 6px;
 
     color: white;
     text-align: center;
     line-height: 1.3;
     overflow-wrap: break-word;
-
-    border-radius: 6px;
-
     font-size: 15px;
 
     cursor: default;
-
     transition: 0.3s ease;
 }
 
 .skill-tag:hover {
     border-color: #9df5db;
-
     color: white;
-
     transform: translateY(-5px);
 }
 
+.skill-tag i {
+    font-size: 1.2em;
+}
+
+/* Brand colours for each icon */
+
+.c-html5    { color: #E34F26; }
+.c-css3     { color: #1572B6; }
+.c-js       { color: #F7DF1E; }
+.c-php      { color: #8892BF; }
+.c-mysql    { color: #4479A1; }
+.c-share    { color: #DB2777; }
+.c-google   { color: #4285F4; }
+.c-meta     { color: #0467DF; }
+.c-seo      { color: #16A34A; }
+.c-analytics{ color: #E37400; }
+.c-research { color: #0EA5E9; }
+.c-git      { color: #F05032; }
+.c-github   { color: #ffffff; }
+.c-canva    { color: #00C4CC; }
+.c-vs       { color: #A177E0; }
+.c-adobe    { color: #FF0000; }
+.c-ai       { color: #7C3AED; }
+
+.skill-tag img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
 /* ========================= PROJECTS ========================= */
 
 .project-link {
@@ -482,8 +519,15 @@ font-weight: bold;
 .project-link:hover {
 text-decoration: underline;
 }
-
-
+.project-thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
 
 /* ========================= CONTACT ========================= */
 
@@ -752,9 +796,7 @@ html {
         transform: translateY(0);
     }
 }
-/* =========================
-MOBILE MENU
-========================= */
+/* ========================= MOBILE MENU ========================= */
 
 .menu-button {
     display: none;
@@ -817,4 +859,28 @@ MOBILE MENU
 .skip-link:focus {
     left: 10px;
     top: 10px;
+}
+
+footer.site-footer {
+    background: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 26px 20px;
+    font-size: 14px;
+}
+
+footer.site-footer p {
+    color: #ffffff;
+    margin: 4px 0;
+}
+
+footer.site-footer a {
+    color: #a2a0a0;
+    text-decoration: none;
+}
+
+footer.site-footer a:hover,
+footer.site-footer a:focus {
+    color: #9bdbce;
+    text-decoration: underline;
 }
