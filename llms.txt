@@ -1,0 +1,16 @@
+# Roshan Daware
+
+> Roshan Daware is a digital marketer and web developer from Maharashtra, India. He builds WordPress websites, works on SEO with Rank Math, and does digital marketing and lead generation.
+
+## Pages
+
+- [Portfolio home](https://roshandaware.netlify.app/): About, experience, education, certificates, skills, projects, FAQ and contact
+- [Privacy policy](https://roshandaware.netlify.app/privacy-policy.html)
+- [Terms and conditions](https://roshandaware.netlify.app/terms-and-conditions.html)
+
+## Profiles
+
+- [GitHub](https://github.com/roshandaware24)
+- [LinkedIn](https://www.linkedin.com/in/roshan-daware-102926284/)
+- [Instagram](https://www.instagram.com/daware_roshan07)
+- [Instagram](https://www.instagram.com/roshandaware.digital?jplx=cnpjcGRkcnNqdjlh)

@@ -317,12 +317,15 @@ li { margin-bottom: 6px; }
   font-size: 14px;
 }
 
-.site-footer p { margin: 6px 0; }
+.site-footer p { margin: 2px 0; }
 
 .site-footer a {
   color: #adacac;
   text-decoration: none;
-  margin: 0 10px;
+}
+.site-footer span {
+  color: #adacac;
+  text-decoration: none;
 }
 
 .site-footer a:hover { color: var(--accent); }
@@ -370,6 +373,6 @@ li { margin-bottom: 6px; }
   }
 }
 .logo-img {
-  height: 70px;
+  height: 60px;
   width: auto;
 }
